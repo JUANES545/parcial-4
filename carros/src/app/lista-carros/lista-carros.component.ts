@@ -26,8 +26,8 @@ export class ListaCarrosComponent {
   }
 
   calculateTotals(): void {
-    this.totalRenault = this.carros.filter(cafe => cafe.marca === 'Renault').length;
-    this.totalChevrolet = this.carros.filter(cafe => cafe.marca === 'Chevrolet').length;
-    this.totalNissan = this.carros.filter(cafe => cafe.marca === 'Nissan').length;
+    this.totalRenault = this.carros.filter(carro => carro.marca === 'Renault').length;
+    this.totalChevrolet = this.carros.filter(carro => carro.marca === 'Chevrolet').length;
+    this.totalNissan = this.carros.filter(carro => carro.marca === 'Nissan').length;
   }
 }
