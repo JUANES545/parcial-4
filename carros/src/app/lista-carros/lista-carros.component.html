@@ -1,1 +1,24 @@
-<p>lista-carros works!</p>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Linea</th>
+            <th scope="col">Modelo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let carro of carros;">
+            <td>{{ carro.id }}</td>
+            <td>{{ carro.marca }}</td>
+            <td>{{ carro.linea }}</td>
+            <td>{{ carro.modelo }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <p class="m-0">Total Renault: {{ totalRenault }}</p>
+    <p class="m-0">Total Chevrolet: {{ totalChevrolet }}</p>
+    <p class="m-0">Total Nissan: {{ totalNissan }}</p>
+</div>
